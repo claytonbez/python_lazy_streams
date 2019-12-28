@@ -26,7 +26,7 @@ class TestBase(TestCase):
         result = sut.to_list()
 
         # then
-        self.assertEqual(result, [0, 1, 2, 3 ,4])
+        self.assertEqual(result, [0, 1, 2, 3, 4])
 
     def test_to_string(self):
         # given

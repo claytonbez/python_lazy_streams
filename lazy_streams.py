@@ -376,6 +376,6 @@ def stream(lst):
     The main entry-point for creating a new stream.  Takes a list (lst) of
     items to populate the the new LazyStream.
     """
-    if isinstance(lst, xrange): # xranges don't really work yet.
+    if isinstance(lst, range):
         lst = list(lst)
     return _LazyListStream(lst)
